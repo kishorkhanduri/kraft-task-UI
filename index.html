@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Responsive Layout with Bootstrap 5</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./assets/Logo.svg" width="120px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-md-flex justify-content-between " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProduct" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Product
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownProduct">
+              <li><a class="dropdown-item" href="#">Product 1</a></li>
+              <li><a class="dropdown-item" href="#">Product 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownResource" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resource
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownResource">
+              <li><a class="dropdown-item" href="#">Resource 1</a></li>
+              <li><a class="dropdown-item" href="#">Resource 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <div class="navbar-nav">
+            <button class="btn btn btn-light me-2 mb-2 mb-md-0 ">Login</button>
+            <button class="btn btn-primary">Sign Up</button>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about-us text-center">
+    <div class="container">
+      <h2 class="number-para-text">About Us</h2>
+      <h2 class="about-heading">About the company</h2>
+      <p>Learn more about the text and the world</p>
+    </div>
+  </section>
+
+  <section class="statistics py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-md-5">
+          <img src="./assets/carft_about.png" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 p-md-5 ">
+          <div class="row">
+            <p class="number-para-text">We’ve helped hundreds of companies</p>
+            <h1 class="number-heading1 mb-md-4 mb-0 ">
+                We’re only just getting started on our journey
+            </h1>
+            <p class="d-md-none">Everything you need to build modern UI and great products. We’ve done all the heavy lifting so you don’t have to — the perfect starting point for any project.</p>
+            <div class="col-md-6">
+              <div class="numbers-data">
+                <h1 class="number-heading">400+</h1>
+                <p class="number-para">Projects completed</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="numbers-data">
+                <h1 class="number-heading">600%</h1>
+                <p class="number-para">Return on investment</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="numbers-data">
+                <h1 class="number-heading">10k</h1>
+                <p class="number-para">Global downloads</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="numbers-data">
+                <h1 class="number-heading">200+</h1>
+                <p class="number-para">5-star reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="placement-partner text-center py-5">
+    <div class="container">
+      <p class="startup pb-3 ">From startups to the world’s largest companies</p>
+      <div class="row justify-content-around  align-items-center">
+        <div class="col-6 col-md-2">
+          <img src="./assets/Company logo.png" alt="logo1" class="img-fluid ">
+        </div>
+        <div class="col-6 col-md-2">
+            <img src="./assets/Company logo (2).png" alt="logo2" class="img-fluid ">
+        </div>
+        <div class="w-100  d-md-none "></div>
+        <div class="col-6 col-md-2">
+            <img src="./assets/Company logo (3).png" alt="logo3" class="img-fluid ">
+        </div>
+        <div class="col-6 col-md-2">
+            <img src="./assets/Company logo (4).png" alt="logo4" class="img-fluid ">
+        </div>
+        <div class="w-100  d-md-none "></div>
+        <div class="col-6 col-md-2">
+            <img src="./assets/Company logo (1).png" alt="logo5" class="img-fluid ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <section class="hiring-section text-center py-5">
+    <div class="container">
+      <p class="number-para-text">We Are Hiring</p>
+      <h2 class="about-heading">Meet Our Team</h2>
+      <p class="startup pb-3 ">Our philosophy is simple — hire a team of diverse, passionate people and foster a culture that empowers you to do your best work.</p>
+      <div class="d-flex justify-content-center">
+        <button class="btn btn-outline-secondary px-4 py-2 me-3">About</button>
+        <button class="btn btn-primary">Open Positions</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-4 ">
+        <div class="col-lg-3 col-md-6">
+          <div class="person-card">
+            <img src="./assets/Avatar.png" alt="Person 1" class="img-fluid rounded-circle mb-3">
+            <h6 class="team-person">John Doe</h6>
+            <p class="designation">Founder & CEO</p>
+            <p class="mb-3 designation-detail">Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</p>
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="person-card">
+            <img src="./assets/Avatar (3).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+            <h6 class="team-person">Phoenix Baker</h6>
+            <p class="designation">Engineering Manager</p>
+            <p class="mb-3 designation-detail">Lead engineering teams at Figma, Pitch, and Protocol Labs.</p>
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+            <div class="person-card">
+              <img src="./assets/Avatar (1).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+              <h6 class="team-person">Lana Steiner</h6>
+              <p class="designation">Product Manager</p>
+              <p class="mb-3 designation-detail">Former PM for Linear, Lambda School, and On Deck.</p>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="person-card">
+              <img src="./assets/Avatar (2).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+              <h6 class="team-person">Demi Wilkinson</h6>
+            <p class="designation">Frontend Developer</p>
+            <p class="mb-3 designation-detail">Former frontend dev for Linear, Coinbase, and Postscript.</p>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6">
+          <div class="person-card">
+            <img src="./assets/Avatar (3).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+            <h6 class="team-person">Candice Wu</h6>
+            <p class="designation">Backend Developer</p>
+            <p class="mb-3 designation-detail">Lead backend dev at Clearbit. Former Clearbit and Loom.</p>
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="person-card">
+            <img src="./assets/Avatar.png" alt="Person 1" class="img-fluid rounded-circle mb-3">
+            <h6 class="team-person">Natali Craig</h6>
+            <p class="designation">Product Designer</p>
+            <p class="mb-3 designation-detail">Founding design team at Figma. Former Pleo, Stripe, and Tile.</p>
+            <div class="d-flex justify-content-center">
+              <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+              <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+            </div>
+          </div>
+        </div>
+        
+
+       
+          <div class="col-lg-3 col-md-6">
+            <div class="person-card">
+              <img src="./assets/Avatar (2).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+              <h6 class="team-person">Drew Cano</h6>
+            <p class="designation">UX Researcher</p>
+            <p class="mb-3 designation-detail">Lead user research for Slack. Contractor for Netflix and Udacity.</p>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="person-card">
+              <img src="./assets/Avatar (1).png" alt="Person 2" class="img-fluid rounded-circle mb-3">
+              <h6 class="team-person">Orlando Diggs</h6>
+            <p class="designation">Customer Success</p>
+            <p class="mb-3 designation-detail">Lead CX at Wealthsimple. Former PagerDuty and Sqreen.</p>
+              <div class="d-flex justify-content-center">
+                <a href="#"><i class="fab fa-twitter me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-facebook me-3 social-icons-person"></i></a>
+                <a href="#"><i class="fab fa-linkedin social-icons-person"></i></a>
+              </div>
+            </div>
+          </div>
+          
+      </div>
+    </div>
+  </section>
+
+  <section class="values-section text-center py-5   ">
+    <div class="container">
+      <h2 class="number-para-text">Our Values</h2>
+      <h2 class="our-value">How we work at Untitled</h2>
+      <p class="startup pb-3 ">Our shared values keep us connected and guide us as one team.</p>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <h5>Care about our team</h5>
+          <p class="our-values-subheading">Understand what matters to our employees. Give them what they need to do their best work.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <h5>Be excellent to each other</h5>
+          <p class="our-values-subheading">No games. No bullshit. We rely on our peers to improve. Be open, honest and kind.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+          </div>
+          <h5>Pride in what we do</h5>
+          <p class="our-values-subheading">Value quality and integrity in everything we do. At all times. No exceptions.</p>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+           <i class="fa-regular fa-face-smile"></i>
+          </div>
+          <h5>Don't #!&$ the customer</h5>
+          <p class="our-values-subheading">Understand customers' stated and unstated needs. Make them wildly successful.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+            <i class="fa-regular fa-flag"></i>
+          </div>
+          <h5>Do the impossible</h5>
+          <p class="our-values-subheading">Be energized by difficult problems. Revel in unknowns. Ask "Why?", but always question, "Why not?"</p>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center">
+          <div class="icon-bg mb-3">
+            <i class="fa-regular fa-bolt"></i>
+          </div>
+          <h5>Sweat the small stuff</h5>
+          <p class="our-values-subheading">We believe the best products come from the best attention to detail. Sweat the small stuff.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="open-positions-section  py-5">
+    <div class="container">
+  <section class="open-positions-section  py-5">
+      <p class="text-center "><span class="open-position-main">Open Positions</span> </p>
+      <h4 class="text-center our-position-subheading ">We're looking for talented people.</h4>
+      <p class="text-center startup">We’re a 100% remote team spread all across the world. Join us!</p>
+
+      <div class="row mt-5">
+        <div class="col">
+          <img src="./assets/Image (1).png" class="img-fluid" alt="Open Positions Image">
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-8 offset-lg-2">
+          <h4 class="mb-4">Design</h4>
+          <div class="card border">
+            <div class="card-body">
+              <h5 class="card-title">Product Designer</h5>
+              <p class="card-text">We are looking for mid-level product designers to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 80k - 100k
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border mt-4">
+            <div class="card-body">
+              <h5 class="card-title">UX Designer</h5>
+              <p class="card-text">We are looking for experienced UX designers to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 90k - 110k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="my-4">Software Developer</h4>
+          <div class="card border">
+            <div class="card-body">
+              <h5 class="card-title">Engineering Manager</h5>
+              <p class="card-text">We’re looking for an experienced engineering manager to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 80k - 100k
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Frontend Developer</h5>
+              <p class="card-text">We’re looking for an experienced engineering manager to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 90k - 110k
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card border mt-4">
+            <div class="card-body">
+              <h5 class="card-title">Backend Developer</h5>
+              <p class="card-text">We’re looking for an experienced engineering manager to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 90k - 110k
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4 class="my-4">Customer Success</h4>
+          <div class="card border">
+            <div class="card-body">
+              <h5 class="card-title">Customer Success Manager</h5>
+              <p class="card-text">We’re looking for a mid-level product designer to join our team.</p>
+              <div class="row align-items-center">
+                <div class="col-md-2">
+                  <i class="fas fa-clock"></i> Full Time
+                </div>
+                <div class="col-md-2">
+                  <i class="fas fa-dollar-sign"></i> 80k - 100k
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="trial-section py-3">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Start your 30-day free trial</h3>
+          <p>Join over 4,000+ startups already growing with Untitled.</p>
+        </div>
+        
+        <div class="col-md-6 d-flex justify-content-end ">
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-secondary px-3 py-2">Learn More</button>
+            <button class="btn btn-success px-4 ">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer-section pt-5 pb-3">
+    <div class="container">
+        <hr class="my-4">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-4">
+          <img src="./assets/Logo.svg" alt="Logo" class="img-fluid">
+          <p class="mt-3">Design amazing digital experiences that create more happy in the world.</p>
+        </div>
+        <div class="col-6 col-md-2 mb-4  ps-md-5 ">
+          <h5 class="list-heading">Product</h5>
+          <ul class="list-unstyled">
+            <li><a class="list-data" href="#">Overview</a></li>
+            <li><a class="list-data" href="#">Features</a></li>
+            <li><a class="list-data" href="#">Solutions</a></li>
+            <li><a class="list-data" href="#">Tutorials</a></li>
+            <li><a class="list-data" href="#">Pricing</a></li>
+            <li><a class="list-data" href="#">Releases</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-4  ps-md-5">
+          <h5 class="list-heading">Company</h5>
+          <ul class="list-unstyled ">
+            <li><a class="list-data" href="#">About Us</a></li>
+            <li><a class="list-data" href="#">Careers</a></li>
+            <li><a class="list-data" href="#">Press</a></li>
+            <li><a class="list-data" href="#">News</a></li>
+            <li><a class="list-data" href="#">Media kit</a></li>
+            <li><a class="list-data" href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-4  ps-md-5">
+          <h5 class="list-heading">Resources</h5>
+          <ul class="list-unstyled">
+            <li><a class="list-data" href="#">Blog</a></li>
+            <li><a class="list-data" href="#">Newsletter</a></li>
+            <li><a class="list-data" href="#">Events</a></li>
+            <li><a class="list-data" href="#">Help centre</a></li>
+            <li><a class="list-data" href="#">Tutorials</a></li>
+            <li><a class="list-data" href="#">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-4  ps-md-5">
+          <h5 class="list-heading">Social</h5>
+          <ul class="list-unstyled">
+            <li><a class="list-data" href="#">Twitter</a></li>
+            <li><a class="list-data" href="#">LinkedIn</a></li>
+            <li><a class="list-data" href="#">Facebook</a></li>
+            <li><a class="list-data" href="#">GitHub</a></li>
+            <li><a class="list-data" href="#">AngelList</a></li>
+            <li><a class="list-data" href="#">Dribbble</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-4  ps-md-5">
+          <h5 class="list-heading">Legal</h5>
+          <ul class="list-unstyled">
+            <li><a class="list-data" href="#">Terms</a></li>
+            <li><a class="list-data" href="#">Privacy</a></li>
+            <li><a class="list-data" href="#">Cookies</a></li>
+            <li><a class="list-data" href="#">Licenses</a></li>
+            <li><a class="list-data" href="#">Settings</a></li>  
+            <li><a class="list-data" href="#">Contact</a></li>  
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row d-flex flex-md-row flex-column-reverse  ">
+        <div class="col-md-6 mb-4 d-flex justify-content-start align-items-center text-center">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 mb-4 d-flex justify-content-center  justify-content-md-end align-items-center">
+          <a href="#" class="me-3"><i class="fab fa-facebook-f social-icon-footer"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-instagram social-icon-footer"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-linkedin social-icon-footer"></i></a>
+          <a href="#" class="me-3"><i class="fab fa-twitter social-icon-footer"></i></a>
+          <a href="#" class="me-3"><i class="fa-brands fa-github social-icon-footer"></i></a>
+          <a href="#" class="me-3"><i class="fa-regular fa-hand-peace social-icon-footer"></i></a>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
